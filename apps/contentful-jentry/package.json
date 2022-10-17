@@ -1,0 +1,67 @@
+{
+	"name": "@tomazjejcic/jentry",
+	"version": "0.1.2",
+	"private": false,
+	"dependencies": {
+		"@contentful/app-sdk": "4.12.0",
+		"@contentful/f36-components": "4.15.0",
+		"@contentful/f36-tokens": "4.0.1",
+		"@contentful/react-apps-toolkit": "1.2.5",
+		"@monaco-editor/react": "^4.4.5",
+		"contentful-management": "10.12.0",
+		"emotion": "10.0.27",
+		"monaco-editor": "^0.34.0"
+	},
+	"scripts": {
+		"dev": "cross-env BROWSER=none react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"create-app-definition": "contentful-app-scripts create-app-definition",
+		"upload": "contentful-app-scripts upload --bundle-dir ./build",
+		"upload-ci": "contentful-app-scripts upload --ci --bundle-dir ./build  --organization-id $CONTENTFUL_ORG_ID --definition-id $CONTENTFUL_APP_DEF_ID --token $CONTENTFUL_ACCESS_TOKEN",
+		"lint": "eslint --ext=js,jsx,ts,tsx,json .",
+		"lint:fix": "eslint --ext=js,jsx,ts,tsx,json . --fix"
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 2,
+		"singleQuote": true
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@contentful/app-scripts": "1.1.19",
+		"@testing-library/jest-dom": "5.16.5",
+		"@testing-library/react": "12.1.5",
+		"@tsconfig/create-react-app": "1.0.2",
+		"@types/jest": "28.1.7",
+		"@types/node": "18.7.6",
+		"@types/react": "18.0.9",
+		"@types/react-dom": "18.0.3",
+		"cross-env": "7.0.3",
+		"eslint": "^8.0.1",
+		"eslint-config-custom": "*",
+		"prettier": "2.7.1",
+		"typescript": "4.7.4"
+	},
+	"peerDependencies": {
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-scripts": "5.0.1"
+	},
+	"homepage": ".",
+	"publishConfig": {
+		"access": "public"
+	}
+}
