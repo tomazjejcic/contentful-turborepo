@@ -12,7 +12,7 @@ module.exports = {
   ignorePatterns: [
     "**/build/**",
     "**/node_modules/**",
-    ".eslintrc.json",
+    ".eslintrc.js",
     "tsconfig.json",
     "package.json"
   ],
