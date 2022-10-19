@@ -1,5 +1,14 @@
 {
   "extends": "tsconfig/base.json",
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "outDir": "build",
+  },
   "exclude": ["node_modules"],
   "include": ["src"]
 }
