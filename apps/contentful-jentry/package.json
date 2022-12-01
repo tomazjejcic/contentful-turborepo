@@ -1,6 +1,6 @@
 {
 	"name": "@tomazjejcic/jentry",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"private": false,
 	"dependencies": {
 		"@contentful/app-sdk": "4.12.0",

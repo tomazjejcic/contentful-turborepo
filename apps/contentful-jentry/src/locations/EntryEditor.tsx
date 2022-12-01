@@ -92,7 +92,7 @@ const Entry = (): ReactElement => {
 					<table>
 						<tbody>
 							<tr>
-								<th>Field</th>
+								<th>Fields</th>
 								{spaceLocales.map((key) => {
 									return (
 										<th key={'locale-' + key}>
